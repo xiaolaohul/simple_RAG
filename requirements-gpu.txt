@@ -1,0 +1,4 @@
+# RTX 3060 + NVIDIA 546.92 驱动使用的 CUDA 11.8 版本。
+--extra-index-url https://download.pytorch.org/whl/cu118
+torch==2.7.1+cu118
+-r requirements.txt

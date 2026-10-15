@@ -1,0 +1,122 @@
+[
+  {
+    "id": "AST-01",
+    "raw_path": "raw/AST-01.txt",
+    "resolved_source_url": "https://science.nasa.gov/sun/facts/",
+    "raw_sha256": "fae4e8809196d032426b62a1b6424fe06b88a28458362db30355c189bcb27d8a",
+    "raw_characters": 17628,
+    "status": "saved"
+  },
+  {
+    "id": "AST-02",
+    "raw_path": "raw/AST-02.txt",
+    "resolved_source_url": "https://science.nasa.gov/moon/facts/",
+    "raw_sha256": "ce2b1c5f9ffd7027c049fc61cafad6914b610a07963858ac4c6de042c9a5374b",
+    "raw_characters": 9377,
+    "status": "saved"
+  },
+  {
+    "id": "AST-03",
+    "raw_path": "raw/AST-03.txt",
+    "resolved_source_url": "https://science.nasa.gov/mars/facts/",
+    "raw_sha256": "58dd1c7a35ba68678769791594044c44237b43041818c1ff1088b504f1c43fa7",
+    "raw_characters": 9568,
+    "status": "saved"
+  },
+  {
+    "id": "AST-04",
+    "raw_path": "raw/AST-04.txt",
+    "resolved_source_url": "https://science.nasa.gov/jupiter/jupiter-facts/",
+    "raw_sha256": "734d0129e409fc8400b1e6d788fc0d6b18190a1fbeb536e93e340fa0dba4e1ff",
+    "raw_characters": 11862,
+    "status": "saved"
+  },
+  {
+    "id": "AST-05",
+    "raw_path": "raw/AST-05.txt",
+    "resolved_source_url": "https://science.nasa.gov/saturn/facts/",
+    "raw_sha256": "c11413e07a8af64c60adb85ec1beb699c80c2ffba603328fedc4a04104e7b9a7",
+    "raw_characters": 8434,
+    "status": "saved"
+  },
+  {
+    "id": "ENV-01",
+    "raw_path": "raw/ENV-01.txt",
+    "resolved_source_url": "https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-currents",
+    "raw_sha256": "6dd8d8aeecc02603a852063c75c8baf23197660aecad48204644324991cc391a",
+    "raw_characters": 8706,
+    "status": "saved"
+  },
+  {
+    "id": "ENV-02",
+    "raw_path": "raw/ENV-02.txt",
+    "resolved_source_url": "https://www.noaa.gov/education/resource-collections/freshwater/water-cycle",
+    "raw_sha256": "c1a4f325e1f12eddaf270a367044658869856cab20b894732cb2b259489bfd7b",
+    "raw_characters": 15842,
+    "status": "saved"
+  },
+  {
+    "id": "ENV-03",
+    "raw_path": "raw/ENV-03.txt",
+    "resolved_source_url": "https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-acidification",
+    "raw_sha256": "6f0c8acdca8954c8a3fed1dfb1b18e8c0f742687ac57a0312db1e25fff1e04e6",
+    "raw_characters": 13589,
+    "status": "saved"
+  },
+  {
+    "id": "ENV-04",
+    "raw_path": "raw/ENV-04.txt",
+    "resolved_source_url": "https://oceanservice.noaa.gov/facts/coral_bleach.html",
+    "raw_sha256": "030fe8e397d7db133442b05d00bf1b23144aaaf515e8dae1618bb470d510537d",
+    "raw_characters": 3084,
+    "status": "saved"
+  },
+  {
+    "id": "ENV-05",
+    "raw_path": "raw/ENV-05.txt",
+    "resolved_source_url": "https://oceanservice.noaa.gov/facts/tides.html",
+    "raw_sha256": "ddbf674088a80de708fec446ffb4552d633b3468fcccfc56b57c6fa7552f4d8e",
+    "raw_characters": 1367,
+    "status": "saved"
+  },
+  {
+    "id": "WEB-01",
+    "raw_path": "raw/WEB-01.txt",
+    "resolved_source_url": "https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Guides/Overview",
+    "raw_sha256": "d9b77855807928ce746acf8afa8b61b55c710d52ec8e6379081725015e3fcc29",
+    "raw_characters": 5654,
+    "status": "saved"
+  },
+  {
+    "id": "WEB-02",
+    "raw_path": "raw/WEB-02.txt",
+    "resolved_source_url": "https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax",
+    "raw_sha256": "a13f14de398b21d9f390caaae72a15699baf037c73cb7fe2cfc26e873871e45b",
+    "raw_characters": 9239,
+    "status": "saved"
+  },
+  {
+    "id": "WEB-03",
+    "raw_path": "raw/WEB-03.txt",
+    "resolved_source_url": "https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Styling_basics/What_is_CSS",
+    "raw_sha256": "1a7f174639b1affee9fab95a19186e994d57c943fe8735af59aaad054eff55b8",
+    "raw_characters": 3063,
+    "status": "saved"
+  },
+  {
+    "id": "WEB-04",
+    "raw_path": "raw/WEB-04.txt",
+    "resolved_source_url": "https://developer.mozilla.org/zh-CN/docs/Glossary/DNS",
+    "raw_sha256": "e1ab6d4fdba4f2f0590a85c6b188586c56f4a4a8573f03b7932f60a109f54577",
+    "raw_characters": 494,
+    "status": "saved"
+  },
+  {
+    "id": "WEB-05",
+    "raw_path": "raw/WEB-05.txt",
+    "resolved_source_url": "https://developer.mozilla.org/zh-CN/docs/Glossary/JavaScript",
+    "raw_sha256": "e0a44a4f8b49888fc76f7d967b4c92a6023847d89aa4d941a5412d33be37499f",
+    "raw_characters": 1302,
+    "status": "saved"
+  }
+]

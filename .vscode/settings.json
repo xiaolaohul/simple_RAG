@@ -1,0 +1,9 @@
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "workbench.colorCustomizations": {
+        "editorUnicodeHighlight.border": "#00000000",
+        "editorUnicodeHighlight.background": "#00000000"
+    }
+}

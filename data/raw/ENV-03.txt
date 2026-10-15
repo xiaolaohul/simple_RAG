@@ -1,0 +1,356 @@
+Title: Ocean acidification
+Publisher: NOAA
+URL: https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-acidification
+Accessed: 2026-10-15
+License: 美国政府机构科普文字；仅整理文字，不收录第三方图片、标志或媒体。
+License URL: https://oceanservice.noaa.gov/about/faq.html
+
+Ocean acidification
+
+Focus areas:
+
+Education
+
+Topics:
+
+ocean acidification
+
+education
+
+Share:
+
+Share to Twitter
+
+Share to Facebook
+
+Share by email
+
+Print
+
+Keep exploring
+
+Find even more resources on ocean acidification in Sea to Sky, our searchable resource database.
+
+Sanctuaries resource collection: Ocean acidification
+
+Lesson plans & activities
+
+Choose your own (O)Adventure: Educational resources from the NOAA Ocean Acidification Program (ES, MS, HS)
+
+Data in the Classroom: Understanding ocean and coastal acidification
+
+Dungeness crab climb: Survival in a changing ocean (MS)
+
+Marine osteoporosis: pH lab activity (MS)
+
+Ocean acidification and dry ice: Hands-on activity (ES, MS, HS)
+
+Ocean acidification communication toolkit: Dungeness crab case study (MS, HS)
+
+Multimedia
+
+Ocean Today: The acid test (video)
+
+Making waves: Ocean acidification (video)
+
+Ocean acidification's impact on oysters and other shellfish (video)
+
+Be a claw abiding citizen: Learn how ocean acidification could affect Dungeness crabs (60 minute webinar)
+
+Data resources
+
+Ocean acidification observations and data
+
+NOAAView data imagery portal
+
+Real-time ocean acidification data from NANOOS offsite link
+
+PMEL Carbon Program data portal
+
+Background information
+
+Ocean acidification communication toolkit: Dungeness crab case study
+
+What is ocean acidification?
+
+A primer on pH
+
+Career resources
+
+From coastal research to Capitol Hill: A day in the life of a NOAA ocean acidification scientist
+
+Chemical oceanographer Dr. Leticia Barbero
+
+Oceanographer and carbon cycle specialist Dr. Jessica Cross
+
+Q&A with Dr. Meghan Cronin
+
+Q&A with Dr. Sophie Chu
+
+Related stories
+
+NOAA tackles ocean, Great Lakes acidification (2020)
+
+NOAA invests in tools to measure the ocean (2019)
+
+At a California oyster hatchery, farming native seaweed improved water quality (2019)
+
+Saildrone is first to circumnavigate Antarctica, in search for carbon dioxide (2019)
+
+New NOAA, partner buoy in American Samoa opens window into a changing ocean (2019)
+
+New tool helps oyster growers prepare for changing ocean chemistry (2017)
+
+A more acidic Arctic? NOAA deploys first buoy in region to monitor levels of CO2 absorbed by ocean (2013)
+
+More Collections
+
+Oil spills
+
+Tides
+
+Tsunamis
+
+Ocean pollution and marine debris
+
+Ocean floor features
+
+Ocean currents
+
+In the 200-plus years since the industrial revolution began, the concentration of carbon dioxide (CO2) in the atmosphere has increased due to human actions. During this time, the pH of surface ocean waters has fallen by 0.1 pH units. This might not sound like much, but the pH scale is logarithmic, so this change represents approximately a 30 percent increase in acidity.
+
+A pteropod shell is shown dissolving over time in seawater with a lower pH. When carbon dioxide is absorbed by the ocean from the atmosphere, the chemistry of the seawater is changed. (Image credit: NOAA)
+
+Download Image
+
+Keep exploring
+
+Find even more resources on ocean acidification in Sea to Sky, our searchable resource database.
+
+Sanctuaries resource collection: Ocean acidification
+
+Lesson plans & activities
+
+Choose your own (O)Adventure: Educational resources from the NOAA Ocean Acidification Program (ES, MS, HS)
+
+Data in the Classroom: Understanding ocean and coastal acidification
+
+Dungeness crab climb: Survival in a changing ocean (MS)
+
+Marine osteoporosis: pH lab activity (MS)
+
+Ocean acidification and dry ice: Hands-on activity (ES, MS, HS)
+
+Ocean acidification communication toolkit: Dungeness crab case study (MS, HS)
+
+Multimedia
+
+Ocean Today: The acid test (video)
+
+Making waves: Ocean acidification (video)
+
+Ocean acidification's impact on oysters and other shellfish (video)
+
+Be a claw abiding citizen: Learn how ocean acidification could affect Dungeness crabs (60 minute webinar)
+
+Data resources
+
+Ocean acidification observations and data
+
+NOAAView data imagery portal
+
+Real-time ocean acidification data from NANOOS offsite link
+
+PMEL Carbon Program data portal
+
+Background information
+
+Ocean acidification communication toolkit: Dungeness crab case study
+
+What is ocean acidification?
+
+A primer on pH
+
+Career resources
+
+From coastal research to Capitol Hill: A day in the life of a NOAA ocean acidification scientist
+
+Chemical oceanographer Dr. Leticia Barbero
+
+Oceanographer and carbon cycle specialist Dr. Jessica Cross
+
+Q&A with Dr. Meghan Cronin
+
+Q&A with Dr. Sophie Chu
+
+Related stories
+
+NOAA tackles ocean, Great Lakes acidification (2020)
+
+NOAA invests in tools to measure the ocean (2019)
+
+At a California oyster hatchery, farming native seaweed improved water quality (2019)
+
+Saildrone is first to circumnavigate Antarctica, in search for carbon dioxide (2019)
+
+New NOAA, partner buoy in American Samoa opens window into a changing ocean (2019)
+
+New tool helps oyster growers prepare for changing ocean chemistry (2017)
+
+A more acidic Arctic? NOAA deploys first buoy in region to monitor levels of CO2 absorbed by ocean (2013)
+
+More Collections
+
+Oil spills
+
+Tides
+
+Tsunamis
+
+Ocean pollution and marine debris
+
+Ocean floor features
+
+Ocean currents
+
+The ocean absorbs about 30% of the carbon dioxide (CO2) that is released in the atmosphere. As levels of atmospheric CO2 increase from human activity such as burning fossil fuels (e.g., car emissions) and changing land use (e.g., deforestation), the amount of carbon dioxide absorbed by the ocean also increases. When CO2 is absorbed by seawater, a series of chemical reactions occur resulting in the increased concentration of hydrogen ions. This process has far reaching implications for the ocean and the creatures that live there.
+
+The pH scale
+
+The pH scale runs from 0 to 14, with 7 being a neutral pH. Anything higher than 7 is basic (or alkaline) and anything lower than 7 is acidic. The pH scale is an inverse of hydrogen ion concentration, so more hydrogen ions translates to higher acidity and a lower pH.
+
+Carbon dioxide and seawater
+
+Carbon dioxide, which is naturally in the atmosphere, dissolves into seawater. Water and carbon dioxide combine to form carbonic acid (H2CO3), a weak acid that breaks (or “dissociates”) into hydrogen ions (H+) and bicarbonate ions (HCO3-).
+
+Because of human-driven increased levels of carbon dioxide in the atmosphere, there is more CO2 dissolving into the ocean. The ocean’s average pH is now around 8.1 offsite link, which is basic (or alkaline), but as the ocean continues to absorb more CO2, the pH decreases and the ocean becomes more acidic.
+
+NOAA scholar explores new skills during ocean acidification internship
+
+Alison Novara, a 2022 EPP/MSI Scholar, spent her second summer internship at NOAA’s Geophysical Fluid Dynamics Laboratory studying whether ocean acidification could cause populations of these animals to collapse or change their habitat range.
+
+Impacts of ocean acidification on shell builders
+
+Ocean acidification is already impacting many ocean species, especially organisms like oysters and corals that make hard shells and skeletons by combining calcium and carbonate from seawater. However, as ocean acidification increases, available carbonate ions (CO32-) bond with excess hydrogen, resulting in fewer carbonate ions available for calcifying organisms to build and maintain their shells, skeletons, and other calcium carbonate structures. If the pH gets too low, shells and skeletons can even begin to dissolve.
+
+The pteropod, or "sea butterfly," is a tiny sea snail about the size of a small pea. Pteropods are an important part of many food webs and eaten by organisms ranging in size from tiny krill to whales. When pteropod shells were placed in sea water with pH and carbonate levels projected for the year 2100, the shells slowly dissolved after 45 days. Researchers have already discovered severe levels of pteropod shell dissolution offsite link in the Southern Ocean, which encircles Antarctica.
+
+Ocean acidification impacts on fish and seaweeds
+
+Changes in ocean chemistry can affect the behavior of non-calcifying organisms as well. The ability of some fish, like clownfish, to detect predators is decreased in more acidic waters. Studies have shown that decreased pH levels also affect the ability of larval clownfish offsite link to locate suitable habitat. When these organisms are at risk, the entire food web may also be at risk.
+
+While some species will be harmed by ocean acidification, algae and seagrasses may benefit from higher CO2 conditions in the ocean, as they require CO2 for photosynthesis just like plants on land. There are some ongoing studies examining if growing seaweed can help slow ocean acidification.
+
+Global atmospheric carbon dioxide levels continue to rise
+
+A recent report shows global carbon dioxide emissions remain at record levels and natural carbon sinks are being impacted by climate change. The report also provides a detailed accounting of carbon storage in the ocean and land.
+
+Our changing ocean
+
+Estimates of future carbon dioxide levels, based on business-as-usual emission scenarios, indicate that by the end of this century the surface waters of the ocean could have a pH around 7.8 The last time the ocean pH was this low was during the middle Miocene, 14-17 million years ago. The Earth was several degrees warmer and a major extinction event was occurring.
+
+Ocean acidification is currently affecting the entire ocean, including coastal estuaries and waterways. Billions of people worldwide rely on food from the ocean as their primary source of protein. Many jobs and economies in the U.S. and around the world depend on the fish and shellfish that live in the ocean.
+
+Current research
+
+Ocean acidification is one aspect of global climate change. Anything we do to mitigate climate change today will benefit the future of the ocean as well. Over the last decade, there has been much focus in the ocean science community on studying the potential impacts of ocean acidification. NOAA's Ocean Acidification Program serves to build relationships between scientists, resource managers, policy makers, and the public in order to research and monitor the effects of changing ocean chemistry on economically and ecologically important ecosystems such as fisheries and coral reefs.
+
+Because sustained efforts to monitor ocean acidification worldwide are only beginning, it is currently impossible to predict exactly how ocean acidification impacts will cascade throughout the marine food web and affect the overall structure of marine ecosystems. With the pace of ocean acidification accelerating, scientists, resource managers, and policymakers recognize the urgent need to strengthen the science as a basis for sound decision making and action.
+
+Popular crab might feel the pinch from ocean acidification
+
+A NOAA-funded study has documented that ocean acidification along the U.S. Pacific Northwest coast is impacting the shells and sensory organs of some young Dungeness crab, a prized crustacean that supports the most valuable fishery on the West Coast.
+
+EDUCATION CONNECTION
+
+Ocean acidification is a problem that impacts the ocean ecosystem as well as commercial industries like oyster farms. This topic can be taught in conjunction with lessons about food webs and ecosystems, the environmental impacts of climate change and CO2 emissions, and chemistry lessons concerning real-life applications. Students can explore data, including real-time information about carbon dioxide levels in seawater and in the atmosphere.
+
+Keep exploring
+
+Find even more resources on ocean acidification in Sea to Sky, our searchable resource database.
+
+Sanctuaries resource collection: Ocean acidification
+
+Lesson plans & activities
+
+Choose your own (O)Adventure: Educational resources from the NOAA Ocean Acidification Program (ES, MS, HS)
+
+Data in the Classroom: Understanding ocean and coastal acidification
+
+Dungeness crab climb: Survival in a changing ocean (MS)
+
+Marine osteoporosis: pH lab activity (MS)
+
+Ocean acidification and dry ice: Hands-on activity (ES, MS, HS)
+
+Ocean acidification communication toolkit: Dungeness crab case study (MS, HS)
+
+Multimedia
+
+Ocean Today: The acid test (video)
+
+Making waves: Ocean acidification (video)
+
+Ocean acidification's impact on oysters and other shellfish (video)
+
+Be a claw abiding citizen: Learn how ocean acidification could affect Dungeness crabs (60 minute webinar)
+
+Data resources
+
+Ocean acidification observations and data
+
+NOAAView data imagery portal
+
+Real-time ocean acidification data from NANOOS offsite link
+
+PMEL Carbon Program data portal
+
+Background information
+
+Ocean acidification communication toolkit: Dungeness crab case study
+
+What is ocean acidification?
+
+A primer on pH
+
+Career resources
+
+From coastal research to Capitol Hill: A day in the life of a NOAA ocean acidification scientist
+
+Chemical oceanographer Dr. Leticia Barbero
+
+Oceanographer and carbon cycle specialist Dr. Jessica Cross
+
+Q&A with Dr. Meghan Cronin
+
+Q&A with Dr. Sophie Chu
+
+Related stories
+
+NOAA tackles ocean, Great Lakes acidification (2020)
+
+NOAA invests in tools to measure the ocean (2019)
+
+At a California oyster hatchery, farming native seaweed improved water quality (2019)
+
+Saildrone is first to circumnavigate Antarctica, in search for carbon dioxide (2019)
+
+New NOAA, partner buoy in American Samoa opens window into a changing ocean (2019)
+
+New tool helps oyster growers prepare for changing ocean chemistry (2017)
+
+A more acidic Arctic? NOAA deploys first buoy in region to monitor levels of CO2 absorbed by ocean (2013)
+
+More Collections
+
+Oil spills
+
+Tides
+
+Tsunamis
+
+Ocean pollution and marine debris
+
+Ocean floor features
+
+Ocean currents

@@ -1,0 +1,360 @@
+{
+  "summary": {
+    "document_count": 15,
+    "chunks": 33,
+    "vectors": 33,
+    "dimensions": 512,
+    "device": "cuda:0",
+    "checks": 15,
+    "hit_at_1": 15,
+    "hit_at_3": 15,
+    "note": "针对本次语料设计的检索冒烟测试，不是独立测试集上的泛化性能。"
+  },
+  "results": [
+    {
+      "question": "太阳内部通过什么反应产生光和热？",
+      "expected_source": "astronomy/01_sun.md",
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "retrieved": [
+        {
+          "source": "astronomy/01_sun.md",
+          "chunk_number": 2,
+          "score": 0.641187
+        },
+        {
+          "source": "astronomy/01_sun.md",
+          "chunk_number": 1,
+          "score": 0.576877
+        },
+        {
+          "source": "environment/02_water_cycle.md",
+          "chunk_number": 3,
+          "score": 0.487801
+        }
+      ]
+    },
+    {
+      "question": "为什么我们通常只能看到月球的同一个半球？",
+      "expected_source": "astronomy/02_moon.md",
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "retrieved": [
+        {
+          "source": "astronomy/02_moon.md",
+          "chunk_number": 1,
+          "score": 0.631927
+        },
+        {
+          "source": "astronomy/02_moon.md",
+          "chunk_number": 2,
+          "score": 0.608
+        },
+        {
+          "source": "astronomy/02_moon.md",
+          "chunk_number": 3,
+          "score": 0.531343
+        }
+      ]
+    },
+    {
+      "question": "一个火星年相当于多少个地球日？",
+      "expected_source": "astronomy/03_mars.md",
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "retrieved": [
+        {
+          "source": "astronomy/03_mars.md",
+          "chunk_number": 1,
+          "score": 0.674096
+        },
+        {
+          "source": "astronomy/03_mars.md",
+          "chunk_number": 2,
+          "score": 0.569474
+        },
+        {
+          "source": "astronomy/03_mars.md",
+          "chunk_number": 3,
+          "score": 0.547822
+        }
+      ]
+    },
+    {
+      "question": "木星大红斑是什么，木星一天有多长？",
+      "expected_source": "astronomy/04_jupiter.md",
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "retrieved": [
+        {
+          "source": "astronomy/04_jupiter.md",
+          "chunk_number": 1,
+          "score": 0.679113
+        },
+        {
+          "source": "astronomy/03_mars.md",
+          "chunk_number": 1,
+          "score": 0.540509
+        },
+        {
+          "source": "astronomy/03_mars.md",
+          "chunk_number": 3,
+          "score": 0.499962
+        }
+      ]
+    },
+    {
+      "question": "土星环是一整块固体圆盘吗，由什么组成？",
+      "expected_source": "astronomy/05_saturn.md",
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "retrieved": [
+        {
+          "source": "astronomy/05_saturn.md",
+          "chunk_number": 1,
+          "score": 0.627312
+        },
+        {
+          "source": "astronomy/03_mars.md",
+          "chunk_number": 1,
+          "score": 0.415364
+        },
+        {
+          "source": "astronomy/01_sun.md",
+          "chunk_number": 2,
+          "score": 0.407278
+        }
+      ]
+    },
+    {
+      "question": "哪些因素驱动洋流，深层温盐环流如何形成？",
+      "expected_source": "environment/01_ocean_currents.md",
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "retrieved": [
+        {
+          "source": "environment/01_ocean_currents.md",
+          "chunk_number": 1,
+          "score": 0.699395
+        },
+        {
+          "source": "environment/01_ocean_currents.md",
+          "chunk_number": 2,
+          "score": 0.694596
+        },
+        {
+          "source": "environment/01_ocean_currents.md",
+          "chunk_number": 3,
+          "score": 0.641402
+        }
+      ]
+    },
+    {
+      "question": "植物吸收的水通过叶片变成水汽离开的过程叫什么？",
+      "expected_source": "environment/02_water_cycle.md",
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "retrieved": [
+        {
+          "source": "environment/02_water_cycle.md",
+          "chunk_number": 1,
+          "score": 0.577555
+        },
+        {
+          "source": "environment/02_water_cycle.md",
+          "chunk_number": 3,
+          "score": 0.528138
+        },
+        {
+          "source": "environment/02_water_cycle.md",
+          "chunk_number": 2,
+          "score": 0.517399
+        }
+      ]
+    },
+    {
+      "question": "海洋酸化为何会让珊瑚和牡蛎更难建造硬壳或骨骼？",
+      "expected_source": "environment/03_ocean_acidification.md",
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "retrieved": [
+        {
+          "source": "environment/03_ocean_acidification.md",
+          "chunk_number": 2,
+          "score": 0.692812
+        },
+        {
+          "source": "environment/04_coral_bleaching.md",
+          "chunk_number": 1,
+          "score": 0.57991
+        },
+        {
+          "source": "environment/03_ocean_acidification.md",
+          "chunk_number": 1,
+          "score": 0.578626
+        }
+      ]
+    },
+    {
+      "question": "珊瑚白化是不是意味着珊瑚已经死亡？",
+      "expected_source": "environment/04_coral_bleaching.md",
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "retrieved": [
+        {
+          "source": "environment/04_coral_bleaching.md",
+          "chunk_number": 1,
+          "score": 0.752445
+        },
+        {
+          "source": "environment/03_ocean_acidification.md",
+          "chunk_number": 2,
+          "score": 0.449877
+        },
+        {
+          "source": "environment/03_ocean_acidification.md",
+          "chunk_number": 3,
+          "score": 0.436185
+        }
+      ]
+    },
+    {
+      "question": "高潮与低潮水位之间的高度差叫什么？",
+      "expected_source": "environment/05_tides.md",
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "retrieved": [
+        {
+          "source": "environment/05_tides.md",
+          "chunk_number": 1,
+          "score": 0.694264
+        },
+        {
+          "source": "environment/01_ocean_currents.md",
+          "chunk_number": 3,
+          "score": 0.432237
+        },
+        {
+          "source": "environment/02_water_cycle.md",
+          "chunk_number": 3,
+          "score": 0.426473
+        }
+      ]
+    },
+    {
+      "question": "HTTP 是无状态的，网站为什么还能维持登录会话？",
+      "expected_source": "computing/01_http.md",
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "retrieved": [
+        {
+          "source": "computing/01_http.md",
+          "chunk_number": 2,
+          "score": 0.655336
+        },
+        {
+          "source": "computing/01_http.md",
+          "chunk_number": 1,
+          "score": 0.59908
+        },
+        {
+          "source": "computing/01_http.md",
+          "chunk_number": 3,
+          "score": 0.598915
+        }
+      ]
+    },
+    {
+      "question": "HTML 文档中的 head 和 body 有什么区别？",
+      "expected_source": "computing/02_html.md",
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "retrieved": [
+        {
+          "source": "computing/02_html.md",
+          "chunk_number": 3,
+          "score": 0.777685
+        },
+        {
+          "source": "computing/02_html.md",
+          "chunk_number": 1,
+          "score": 0.670687
+        },
+        {
+          "source": "computing/02_html.md",
+          "chunk_number": 2,
+          "score": 0.643207
+        }
+      ]
+    },
+    {
+      "question": "CSS 可以通过哪些方式应用到 HTML？",
+      "expected_source": "computing/03_css.md",
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "retrieved": [
+        {
+          "source": "computing/03_css.md",
+          "chunk_number": 1,
+          "score": 0.692197
+        },
+        {
+          "source": "computing/03_css.md",
+          "chunk_number": 2,
+          "score": 0.673193
+        },
+        {
+          "source": "computing/03_css.md",
+          "chunk_number": 3,
+          "score": 0.667823
+        }
+      ]
+    },
+    {
+      "question": "DNS 怎样把域名和 IP 地址联系起来？",
+      "expected_source": "computing/04_dns.md",
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "retrieved": [
+        {
+          "source": "computing/04_dns.md",
+          "chunk_number": 1,
+          "score": 0.734552
+        },
+        {
+          "source": "computing/01_http.md",
+          "chunk_number": 2,
+          "score": 0.51705
+        },
+        {
+          "source": "computing/01_http.md",
+          "chunk_number": 1,
+          "score": 0.51189
+        }
+      ]
+    },
+    {
+      "question": "JavaScript 和 Java 是相同的语言吗，JavaScript 能在服务器端使用吗？",
+      "expected_source": "computing/05_javascript.md",
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "retrieved": [
+        {
+          "source": "computing/05_javascript.md",
+          "chunk_number": 1,
+          "score": 0.722032
+        },
+        {
+          "source": "computing/02_html.md",
+          "chunk_number": 3,
+          "score": 0.54214
+        },
+        {
+          "source": "computing/03_css.md",
+          "chunk_number": 2,
+          "score": 0.532988
+        }
+      ]
+    }
+  ]
+}

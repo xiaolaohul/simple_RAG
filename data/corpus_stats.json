@@ -1,0 +1,156 @@
+{
+  "summary": {
+    "document_count": 15,
+    "domains": {
+      "astronomy": 5,
+      "environment": 5,
+      "computing": 5
+    },
+    "long_documents": 9,
+    "short_documents": 6,
+    "threshold": 350,
+    "counting_rule": "正文去除首行标题；汉字数按U+4E00至U+9FFF统计，非空白字符数排除空格与换行；长文两种口径均>350，短文均<=350。",
+    "chunk_size": 350,
+    "overlap": 60,
+    "total_chunks": 33,
+    "raw_source_snapshots": 15,
+    "created_date": "2026-10-15"
+  },
+  "documents": [
+    {
+      "id": "AST-01",
+      "title": "太阳的结构与能量来源",
+      "domain": "astronomy",
+      "path": "docs/astronomy/01_sun.md",
+      "body_han_characters": 568,
+      "body_non_whitespace_characters": 614,
+      "chunk_count": 3
+    },
+    {
+      "id": "AST-02",
+      "title": "月球的自转、地貌与水冰",
+      "domain": "astronomy",
+      "path": "docs/astronomy/02_moon.md",
+      "body_han_characters": 560,
+      "body_non_whitespace_characters": 604,
+      "chunk_count": 3
+    },
+    {
+      "id": "AST-03",
+      "title": "火星的昼夜、季节与大气",
+      "domain": "astronomy",
+      "path": "docs/astronomy/03_mars.md",
+      "body_han_characters": 560,
+      "body_non_whitespace_characters": 609,
+      "chunk_count": 3
+    },
+    {
+      "id": "AST-04",
+      "title": "木星的基本特征",
+      "domain": "astronomy",
+      "path": "docs/astronomy/04_jupiter.md",
+      "body_han_characters": 204,
+      "body_non_whitespace_characters": 221,
+      "chunk_count": 1
+    },
+    {
+      "id": "AST-05",
+      "title": "土星与行星环",
+      "domain": "astronomy",
+      "path": "docs/astronomy/05_saturn.md",
+      "body_han_characters": 190,
+      "body_non_whitespace_characters": 206,
+      "chunk_count": 1
+    },
+    {
+      "id": "ENV-01",
+      "title": "海洋洋流的驱动与作用",
+      "domain": "environment",
+      "path": "docs/environment/01_ocean_currents.md",
+      "body_han_characters": 569,
+      "body_non_whitespace_characters": 616,
+      "chunk_count": 3
+    },
+    {
+      "id": "ENV-02",
+      "title": "水循环与水的储存和迁移",
+      "domain": "environment",
+      "path": "docs/environment/02_water_cycle.md",
+      "body_han_characters": 581,
+      "body_non_whitespace_characters": 640,
+      "chunk_count": 3
+    },
+    {
+      "id": "ENV-03",
+      "title": "海洋酸化的机制及生态影响",
+      "domain": "environment",
+      "path": "docs/environment/03_ocean_acidification.md",
+      "body_han_characters": 592,
+      "body_non_whitespace_characters": 640,
+      "chunk_count": 3
+    },
+    {
+      "id": "ENV-04",
+      "title": "珊瑚白化是什么",
+      "domain": "environment",
+      "path": "docs/environment/04_coral_bleaching.md",
+      "body_han_characters": 180,
+      "body_non_whitespace_characters": 200,
+      "chunk_count": 1
+    },
+    {
+      "id": "ENV-05",
+      "title": "潮汐与潮差",
+      "domain": "environment",
+      "path": "docs/environment/05_tides.md",
+      "body_han_characters": 178,
+      "body_non_whitespace_characters": 193,
+      "chunk_count": 1
+    },
+    {
+      "id": "WEB-01",
+      "title": "HTTP 的请求、响应与会话",
+      "domain": "computing",
+      "path": "docs/computing/01_http.md",
+      "body_han_characters": 655,
+      "body_non_whitespace_characters": 763,
+      "chunk_count": 3
+    },
+    {
+      "id": "WEB-02",
+      "title": "HTML 元素与文档结构",
+      "domain": "computing",
+      "path": "docs/computing/02_html.md",
+      "body_han_characters": 631,
+      "body_non_whitespace_characters": 738,
+      "chunk_count": 3
+    },
+    {
+      "id": "WEB-03",
+      "title": "CSS 的规则、样式与应用方式",
+      "domain": "computing",
+      "path": "docs/computing/03_css.md",
+      "body_han_characters": 647,
+      "body_non_whitespace_characters": 731,
+      "chunk_count": 3
+    },
+    {
+      "id": "WEB-04",
+      "title": "DNS 与域名解析",
+      "domain": "computing",
+      "path": "docs/computing/04_dns.md",
+      "body_han_characters": 162,
+      "body_non_whitespace_characters": 204,
+      "chunk_count": 1
+    },
+    {
+      "id": "WEB-05",
+      "title": "JavaScript 的用途",
+      "domain": "computing",
+      "path": "docs/computing/05_javascript.md",
+      "body_han_characters": 154,
+      "body_non_whitespace_characters": 249,
+      "chunk_count": 1
+    }
+  ]
+}
