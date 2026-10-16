@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 from dataclasses import asdict, dataclass
+from datetime import datetime, timezone
 import json
 import math
 import os
@@ -13,6 +14,7 @@ import tempfile
 from typing import Any
 
 ROOT = Path(__file__).resolve().parent
+HISTORY_PATH = ROOT / "data" / "queryhistory.json"
 DEFAULT_MODEL = "BAAI/bge-small-zh-v1.5"
 BGE_INSTRUCTION = "为这个句子生成表示以用于检索相关文章："
 SUFFIXES = {".txt", ".md", ".pdf"}
@@ -183,7 +185,36 @@ def make_messages(question: str, hits: list[Hit]) -> list[dict[str, str]]:
     ]
 
 
-def generate(question: str, hits: list[Hit]) -> str:
+def save_query_history(question: str, hits: list[Hit], messages: list[dict[str, str]] | None,
+                       answer: str | None, command: str) -> None:
+    """追加完整查询记录；原文件无效时保留原文件并报错。"""
+    path = HISTORY_PATH
+    history = json.loads(path.read_text(encoding="utf-8")) if path.exists() else []
+    if not isinstance(history, list):
+        raise ValueError(f"查询历史格式无效，应为 JSON 数组：{path}")
+    history.append({
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "command": command,
+        "question": question,
+        "retrieval_results": [{"id": i, **asdict(hit)} for i, hit in enumerate(hits, 1)],
+        "prompt": messages,
+        "answer": answer,
+    })
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temp = None
+    try:
+        with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", dir=path.parent,
+                                         suffix=".tmp", delete=False) as stream:
+            temp = Path(stream.name)
+            json.dump(history, stream, ensure_ascii=False, allow_nan=False, indent=2)
+            stream.write("\n")
+        temp.replace(path)
+    finally:
+        if temp is not None:
+            temp.unlink(missing_ok=True)
+
+
+def generate(question: str, hits: list[Hit], messages: list[dict[str, str]] | None = None) -> str:
     if not hits:
         return "根据现有资料无法回答：没有检索到满足阈值的片段。"
     key = os.getenv("DEEPSEEK_API_KEY", "").strip()
@@ -196,7 +227,8 @@ def generate(question: str, hits: list[Hit]) -> str:
                     timeout=60.0, max_retries=2) as client:
             response = client.chat.completions.create(
                 model=os.getenv("DEEPSEEK_MODEL", "deepseek-flash"),
-                messages=make_messages(question, hits), temperature=0, max_tokens=1024,
+                messages=messages if messages is not None else make_messages(question, hits),
+                temperature=0, max_tokens=1024,
                 extra_body={"thinking": {"type": "disabled"}},
             )
     except APITimeoutError:
@@ -271,8 +303,14 @@ def main() -> int:
                     continue
                 raise ValueError("问题不能为空")
             hits = retrieve(index, encoder.encode([question], query=True)[0], args.top_k, args.min_score)
+            messages = None
+            answer = None
             if args.command != "search":
-                print("\n" + generate(question, hits) + "\n\n检索来源：")
+                messages = make_messages(question, hits)
+                answer = generate(question, hits, messages)
+            save_query_history(question, hits, messages, answer, args.command)
+            if answer is not None:
+                print("\n" + answer + "\n\n检索来源：")
             print_sources(hits, args.show_context or args.command == "search")
             if args.command != "chat":
                 break

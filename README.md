@@ -68,7 +68,9 @@ EMBEDDING_DEVICE=cpu
 .\.venv\Scripts\python.exe rag.py chat
 ```
 
-`chat` 是循环独立问答，不保存对话历史；每个问题需自包含。输入 `/exit` 退出。修改文档、分块参数或编码器后需要重新 `ingest`。查询自动使用索引记录的编码器。
+`chat` 是循环独立问答，每个问题需自包含，历史记录不会作为下一次问答的上下文。输入 `/exit` 退出。修改文档、分块参数或编码器后需要重新 `ingest`。查询自动使用索引记录的编码器。
+
+每次成功完成 `ask`、`chat` 或 `search` 查询后，会自动追加到项目的 `data/queryhistory.json`（本机为 `E:\codex_project\thesis_1\data\queryhistory.json`）。文件是 UTF-8 JSON 数组，每条记录包含 UTC 时间 `timestamp`、命令 `command`、问题 `question`、检索结果 `retrieval_results`（编号、来源、页码、片段编号、原文及相似度）、完整提示词消息 `prompt` 和答案 `answer`。`search` 不生成答案，其 `prompt` 和 `answer` 为 `null`；未检索到片段的问答仍保存构造的提示词和资料不足的答案，但不调用 API。文件不存在时自动创建，后续查询保留已有记录；生成失败的查询不写入。历史文件包含问题与资料原文，适合本地留存；同时运行多个查询进程写入同一文件暂不支持。
 
 默认每块最多 350 个字符，重叠 60 个字符，检索 Top-3。保存文档相对路径、PDF 页码和片段编号，回答用 `[1]` 等编号对应终端中的检索来源。可以调整：
 
