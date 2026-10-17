@@ -6,8 +6,15 @@ __pycache__/
 *.py[cod]
 .cache/
 storage/
+results/
 data/docs/*
 !data/docs/.gitkeep
 !data/docs/astronomy/
 !data/docs/environment/
 !data/docs/computing/
+BGE/results/
+BM25/results/
+data/experiment_summary.csv
+data/experiment_comparison.csv
+data/recall_comparison.png
+data/hit_comparison.png

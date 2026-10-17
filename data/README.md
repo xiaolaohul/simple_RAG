@@ -47,8 +47,8 @@
 在项目根目录运行以下命令，即可建立或刷新正式索引，并使用这 15 份文档问答：
 
 ```powershell
-.\.venv\Scripts\python.exe rag.py ingest
-.\.venv\Scripts\python.exe rag.py chat
+.\.venv\Scripts\python.exe -m BGE.run ingest
+.\.venv\Scripts\python.exe -m BGE.run chat
 ```
 
 正式索引保存于 `storage/index.json`。之前的两份演示资料仍在 `examples/docs`，演示索引为 `storage/demo.json`。默认入库目录是 `data/docs`，请不要将 `--docs` 指向整个 `data`，以免把英文快照、说明文件等重复加入知识库。

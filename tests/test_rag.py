@@ -7,38 +7,41 @@ import unittest
 from unittest.mock import patch
 
 import rag
+from BGE import run as bge
+from BM25 import run as bm25
 
 
 class RagTests(unittest.TestCase):
     def test_queries_append_history_across_commands_and_chat_turns(self):
         hit = rag.Hit(rag.Chunk("资料.pdf", 3, 2, "中文原文"), .8)
-        with tempfile.TemporaryDirectory() as directory:
-            path = Path(directory) / "data" / "queryhistory.json"
-            with (patch.object(rag, "HISTORY_PATH", path),
-                  patch.object(rag, "load_config"),
-                  patch.object(rag, "load_index", return_value={"embedding_model": "test"}),
-                  patch.object(rag, "Encoder") as encoder,
-                  patch.object(rag, "retrieve", return_value=[hit]),
-                  patch.object(rag, "generate", return_value="答案 [1]") as generate,
-                  patch("sys.stdout", new_callable=io.StringIO)):
-                encoder.return_value.encode.return_value = [[1., 0.]]
-                for command in ("ask", "search", "chat"):
-                    argv = ["rag.py", command] + ([] if command == "chat" else ["中文问题"])
-                    with (patch("sys.argv", argv),
-                          patch("builtins.input", side_effect=["问题一", "问题二", "/exit"])):
-                        self.assertEqual(rag.main(), 0)
-                records = json.loads(path.read_text(encoding="utf-8"))
-                self.assertEqual([r["command"] for r in records], ["ask", "search", "chat", "chat"])
-                self.assertEqual([r["question"] for r in records], ["中文问题", "中文问题", "问题一", "问题二"])
-                self.assertEqual(records[0]["retrieval_results"], [{
-                    "id": 1, "chunk": {"source": "资料.pdf", "page": 3, "number": 2, "text": "中文原文"},
-                    "score": .8,
-                }])
-                self.assertEqual(records[0]["prompt"], generate.call_args_list[0].args[2])
-                self.assertEqual(records[0]["answer"], "答案 [1]")
-                self.assertIsNone(records[1]["prompt"])
-                self.assertIsNone(records[1]["answer"])
-                self.assertEqual(generate.call_count, 3)
+        for module, factory_name, method in ((bge, "BGEDenseRetrieval", "BGE"),
+                                               (bm25, "BM25Retrieval", "BM25")):
+            with self.subTest(method=method), tempfile.TemporaryDirectory() as directory:
+                path = Path(directory) / "data" / "queryhistory.json"
+                with (patch.object(rag, "HISTORY_PATH", path), patch.object(rag, "load_config"),
+                      patch.object(rag, "load_index", return_value={}),
+                      patch.object(rag, "load_corpus_index", return_value={}),
+                      patch.object(module, factory_name) as factory,
+                      patch.object(rag, "generate", return_value="答案 [1]") as generate,
+                      patch("sys.stdout", new_callable=io.StringIO)):
+                    factory.return_value.search.return_value = rag.hits_to_results([hit])
+                    for command in ("ask", "search", "chat"):
+                        arguments = [command] + ([] if command == "chat" else ["中文问题"])
+                        with patch("builtins.input", side_effect=["问题一", "问题二", "/exit"]):
+                            self.assertEqual(module.main(arguments), 0)
+                    records = json.loads(path.read_text(encoding="utf-8"))
+                    self.assertEqual([r["command"] for r in records], ["ask", "search", "chat", "chat"])
+                    self.assertEqual([r["method"] for r in records], [method] * 4)
+                    self.assertEqual([r["question"] for r in records], ["中文问题", "中文问题", "问题一", "问题二"])
+                    self.assertEqual(records[0]["retrieval_results"], [{
+                        "id": 1, "chunk": {"source": "资料.pdf", "page": 3, "number": 2, "text": "中文原文"},
+                        "score": .8,
+                    }])
+                    self.assertEqual(records[0]["prompt"], generate.call_args_list[0].args[2])
+                    self.assertEqual(records[0]["answer"], "答案 [1]")
+                    self.assertIsNone(records[1]["prompt"])
+                    self.assertIsNone(records[1]["answer"])
+                    self.assertEqual(generate.call_count, 3)
 
     def test_history_preserves_invalid_existing_file(self):
         with tempfile.TemporaryDirectory() as directory:

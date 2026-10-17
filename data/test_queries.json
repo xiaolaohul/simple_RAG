@@ -1,0 +1,957 @@
+{
+  "version": 1,
+  "name": "three-domain-retrieval-48-v1",
+  "created_date": "2026-10-16",
+  "annotation_method": "AI 辅助依据全部语料及原文证据整理；未使用检索结果生成或调整标注；待人工审核。",
+  "relevance_rule": "每个相关 Chunk 均应能独立支持完整答案；尽量标全重叠片段中的替代证据；主测试不含必须组合多段的问题。",
+  "corpus_fingerprint": "4d10f3f48b75b3609a553e9603f5c641fa10e1881add2e832e8cdfe41de0211f",
+  "queries": [
+    {
+      "query_id": "q001",
+      "domain": "astronomy",
+      "query_type": "事实与概念辨析",
+      "question": "太阳核心的能量来自哪种元素聚变成哪种元素，而不是普通燃烧？",
+      "answer": "来自核聚变，不是普通化学燃烧；核心中氢聚变成氦释放能量。",
+      "relevant_chunk_ids": [
+        "astronomy/01_sun.md::pnone::c0001"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "astronomy/01_sun.md::pnone::c0001",
+          "quote": "核心温度约为一千五百万摄氏度，足以维持氢聚变成氦的核反应。核聚变释放的能量是太阳光和热的来源。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q002",
+      "domain": "astronomy",
+      "query_type": "术语查询",
+      "question": "我们通常看到的太阳发光表面，在结构上叫什么层？",
+      "answer": "光球层。",
+      "relevant_chunk_ids": [
+        "astronomy/01_sun.md::pnone::c0001"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "astronomy/01_sun.md::pnone::c0001",
+          "quote": "通常所说的太阳表面指光球层，这是人们从地球观察太阳时主要看到的发光区域。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q003",
+      "domain": "astronomy",
+      "query_type": "条件对比",
+      "question": "太阳赤道和两极转一圈所需时间一样吗？分别大约多久？",
+      "answer": "不一样；赤道附近约二十五个地球日，两极附近约三十六日。",
+      "relevant_chunk_ids": [
+        "astronomy/01_sun.md::pnone::c0002"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "astronomy/01_sun.md::pnone::c0002",
+          "quote": "太阳各纬度的自转速度不同：赤道附近约二十五个地球日转一周，两极附近约三十六日转一周。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q004",
+      "domain": "astronomy",
+      "query_type": "数字表达改写",
+      "question": "太阳系总质量中，约 99.8% 集中在哪个天体？",
+      "answer": "太阳。",
+      "relevant_chunk_ids": [
+        "astronomy/01_sun.md::pnone::c0002",
+        "astronomy/01_sun.md::pnone::c0003"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "astronomy/01_sun.md::pnone::c0002",
+          "quote": "太阳约占太阳系总质量的百分之九十九点八。"
+        },
+        {
+          "chunk_id": "astronomy/01_sun.md::pnone::c0003",
+          "quote": "太阳约占太阳系总质量的百分之九十九点八。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q005",
+      "domain": "astronomy",
+      "query_type": "概念辨析",
+      "question": "把月球背面称为永远的黑夜区，这个说法为什么不成立？",
+      "answer": "月球背面并非永远没有阳光；随着月球绕地球运行，各处会轮流经历白昼和黑夜。",
+      "relevant_chunk_ids": [
+        "astronomy/02_moon.md::pnone::c0001"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "astronomy/02_moon.md::pnone::c0001",
+          "quote": "月球背面并不是永远没有阳光的区域。随着月球绕地球运行，月球各处会轮流经历白昼和黑夜。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q006",
+      "domain": "astronomy",
+      "query_type": "语义改写",
+      "question": "月面上那些颜色偏暗、被叫作“海”的区域，实际是什么形成的？",
+      "answer": "是古代熔岩填充撞击盆地形成的区域，并非液态水海洋。",
+      "relevant_chunk_ids": [
+        "astronomy/02_moon.md::pnone::c0002"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "astronomy/02_moon.md::pnone::c0002",
+          "quote": "较暗的月海是古代熔岩填充撞击盆地形成的区域，并不是真正装满液态水的海洋。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q007",
+      "domain": "astronomy",
+      "query_type": "同义表达",
+      "question": "如果要在月面找较集中保存的冻结水，应该优先看哪里？",
+      "answer": "月球极区黑暗的陨石坑。",
+      "relevant_chunk_ids": [
+        "astronomy/02_moon.md::pnone::c0002",
+        "astronomy/02_moon.md::pnone::c0003"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "astronomy/02_moon.md::pnone::c0002",
+          "quote": "较高浓度的水冰分布在极区黑暗的陨石坑中。"
+        },
+        {
+          "chunk_id": "astronomy/02_moon.md::pnone::c0003",
+          "quote": "较高浓度的水冰分布在极区黑暗的陨石坑中。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q008",
+      "domain": "astronomy",
+      "query_type": "证据来源",
+      "question": "研究月球形成和早期地质史，哪次任务带回的哪些实物可作为直接材料？",
+      "answer": "阿波罗任务带回的月球岩石和土壤样品。",
+      "relevant_chunk_ids": [
+        "astronomy/02_moon.md::pnone::c0003"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "astronomy/02_moon.md::pnone::c0003",
+          "quote": "阿波罗任务带回的月球岩石和土壤样品，则为研究月球形成及早期地质历史提供了直接材料。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q009",
+      "domain": "astronomy",
+      "query_type": "事实查询",
+      "question": "火星呈红色，主要是土壤中的什么发生了什么变化？",
+      "answer": "土壤中的含铁矿物发生氧化，使表面呈红色。",
+      "relevant_chunk_ids": [
+        "astronomy/03_mars.md::pnone::c0001"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "astronomy/03_mars.md::pnone::c0001",
+          "quote": "火星土壤中的含铁矿物发生氧化，使表面呈现红色，因此火星常被称为红色星球。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q010",
+      "domain": "astronomy",
+      "query_type": "多条件查询",
+      "question": "同样有四季，为何火星每一季通常更长，而且各季长短还不一样？",
+      "answer": "公转周期较长，使季节通常比地球长；轨道呈椭圆形，使各季长度不完全相同。",
+      "relevant_chunk_ids": [
+        "astronomy/03_mars.md::pnone::c0001"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "astronomy/03_mars.md::pnone::c0001",
+          "quote": "由于公转周期较长，火星的季节持续时间通常比地球更长；又因为轨道呈椭圆形，火星各季节的长度并不完全相同。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q011",
+      "domain": "astronomy",
+      "query_type": "原因查询",
+      "question": "火卫一和火卫二为什么长得不像规则圆球？",
+      "answer": "它们质量较小，自身引力不足以将其塑造成接近球形的天体。",
+      "relevant_chunk_ids": [
+        "astronomy/03_mars.md::pnone::c0001",
+        "astronomy/03_mars.md::pnone::c0002"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "astronomy/03_mars.md::pnone::c0001",
+          "quote": "它们的外形不规则，质量较小，自身引力不足以将其塑造成接近球形的天体。"
+        },
+        {
+          "chunk_id": "astronomy/03_mars.md::pnone::c0002",
+          "quote": "它们的外形不规则，质量较小，自身引力不足以将其塑造成接近球形的天体。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q012",
+      "domain": "astronomy",
+      "query_type": "证据辨析",
+      "question": "在火星找到古河谷，就能据此宣布已经发现生命吗？",
+      "answer": "不能；古代水活动证据不等同于生命证据，寻找过去适宜生命的环境和生命迹象仍是研究方向。",
+      "relevant_chunk_ids": [
+        "astronomy/03_mars.md::pnone::c0003"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "astronomy/03_mars.md::pnone::c0003",
+          "quote": "发现古代水活动证据并不等同于已经发现生命；寻找过去适宜生命的环境和生命迹象，是火星研究的重要方向。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q013",
+      "domain": "astronomy",
+      "query_type": "精确术语",
+      "question": "伽利略卫星里，哪颗是太阳系最大的卫星，哪颗可能有冰下海洋？",
+      "answer": "木卫三是最大的卫星；木卫二冰壳下可能存在海洋。",
+      "relevant_chunk_ids": [
+        "astronomy/04_jupiter.md::pnone::c0001"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "astronomy/04_jupiter.md::pnone::c0001",
+          "quote": "木卫三是太阳系最大的卫星；木卫二冰壳下可能存在海洋。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q014",
+      "domain": "astronomy",
+      "query_type": "语义改写",
+      "question": "那个持续数百年的巨大风暴叫什么，属于哪颗行星的大气？",
+      "answer": "大红斑，属于木星大气。",
+      "relevant_chunk_ids": [
+        "astronomy/04_jupiter.md::pnone::c0001"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "astronomy/04_jupiter.md::pnone::c0001",
+          "quote": "木星表面的条纹和旋涡实际上是大气中的云系。大红斑是一场持续数百年的巨大风暴。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q015",
+      "domain": "astronomy",
+      "query_type": "数字事实",
+      "question": "土星的一天和一年各相当于多长的地球时间？",
+      "answer": "一天约十点七小时，一年约二十九点四个地球年。",
+      "relevant_chunk_ids": [
+        "astronomy/05_saturn.md::pnone::c0001"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "astronomy/05_saturn.md::pnone::c0001",
+          "quote": "土星一天约为十点七小时，绕太阳公转一周约需二十九点四个地球年。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q016",
+      "domain": "astronomy",
+      "query_type": "概念辨析",
+      "question": "只有土星拥有行星环吗？为什么它的环格外引人注意？",
+      "answer": "不是；土星并非唯一有行星环的行星，只是它的环尤其醒目。",
+      "relevant_chunk_ids": [
+        "astronomy/05_saturn.md::pnone::c0001"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "astronomy/05_saturn.md::pnone::c0001",
+          "quote": "土星并不是唯一拥有行星环的行星，只是它的环尤其醒目。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q017",
+      "domain": "environment",
+      "query_type": "条件对比",
+      "question": "受地球自转影响，运动海水在南北半球分别偏向哪侧？",
+      "answer": "北半球偏右，南半球偏左，这是科里奥利效应。",
+      "relevant_chunk_ids": [
+        "environment/01_ocean_currents.md::pnone::c0001"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "environment/01_ocean_currents.md::pnone::c0001",
+          "quote": "地球自转引起的科里奥利效应也会改变海水运动方向，使运动在北半球偏向右侧，在南半球偏向左侧。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q018",
+      "domain": "environment",
+      "query_type": "语义改写",
+      "question": "为什么欧洲某些地方比同纬度其他地方暖？是哪股海水搬运了热量？",
+      "answer": "墨西哥湾暖流把温暖海水从热带带向北大西洋，输送热量，使欧洲部分地区更温暖。",
+      "relevant_chunk_ids": [
+        "environment/01_ocean_currents.md::pnone::c0001"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "environment/01_ocean_currents.md::pnone::c0001",
+          "quote": "墨西哥湾暖流就是一个例子：它把温暖海水从热带地区带向北大西洋，其热量输送使欧洲部分地区比同纬度其他地方更温暖。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q019",
+      "domain": "environment",
+      "query_type": "因果查询",
+      "question": "海水结冰时，周围没冻住的水为什么更容易下沉？",
+      "answer": "结冰时盐分主要留在周围海水中，使剩余海水更咸、密度更大，因而下沉。",
+      "relevant_chunk_ids": [
+        "environment/01_ocean_currents.md::pnone::c0002"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "environment/01_ocean_currents.md::pnone::c0002",
+          "quote": "海水结冰时，盐分主要留在周围海水中，使剩余海水更咸、更密。密度较大的海水下沉，其他海水流入补充，推动深层与表层相互连接的全球环流。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q020",
+      "domain": "environment",
+      "query_type": "同义表达",
+      "question": "深水向上补给时，为什么会带动浮游植物乃至鱼类繁盛？",
+      "answer": "上升流把深处寒冷而富含营养物质的海水带到表层，支持浮游植物、海藻及更高营养级生物。",
+      "relevant_chunk_ids": [
+        "environment/01_ocean_currents.md::pnone::c0002",
+        "environment/01_ocean_currents.md::pnone::c0003"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "environment/01_ocean_currents.md::pnone::c0002",
+          "quote": "上升流能够把深处寒冷而富含营养物质的海水带到表层，支持浮游植物和海藻生长，并进一步支持鱼类等更高营养级生物。"
+        },
+        {
+          "chunk_id": "environment/01_ocean_currents.md::pnone::c0003",
+          "quote": "上升流能够把深处寒冷而富含营养物质的海水带到表层，支持浮游植物和海藻生长，并进一步支持鱼类等更高营养级生物。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q021",
+      "domain": "environment",
+      "query_type": "术语查询",
+      "question": "在水循环里，储存库之间的水量迁移叫什么？",
+      "answer": "通量。",
+      "relevant_chunk_ids": [
+        "environment/02_water_cycle.md::pnone::c0001"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "environment/02_water_cycle.md::pnone::c0001",
+          "quote": "水在这些储存库之间的移动称为通量。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q022",
+      "domain": "environment",
+      "query_type": "路径查询",
+      "question": "雨水落地后，除了沿地表汇流，还能经什么路径补给地下储水？",
+      "answer": "下渗到土壤中，再向更深处渗透，补充地下水。",
+      "relevant_chunk_ids": [
+        "environment/02_water_cycle.md::pnone::c0002"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "environment/02_water_cycle.md::pnone::c0002",
+          "quote": "到达地面的水可能沿地表流动，形成径流并进入河流和湖泊；也可能下渗到土壤中，继续向更深处渗透，补充地下水。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q023",
+      "domain": "environment",
+      "query_type": "状态转换",
+      "question": "冰雪没有先化成水就直接变成水汽，这是什么过程？反过程叫什么？",
+      "answer": "固态水直接变成水汽是升华，反过程是凝华。",
+      "relevant_chunk_ids": [
+        "environment/02_water_cycle.md::pnone::c0002"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "environment/02_water_cycle.md::pnone::c0002",
+          "quote": "升华可使固态水直接成为水汽，凝华则是相反的状态变化。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q024",
+      "domain": "environment",
+      "query_type": "多条件查询",
+      "question": "变暖如何同时影响空气容纳水汽的能力和降水强度？",
+      "answer": "较暖空气通常促进蒸发，并能在饱和前容纳更多水汽，使降水间隔和强度可能变化。",
+      "relevant_chunk_ids": [
+        "environment/02_water_cycle.md::pnone::c0002",
+        "environment/02_water_cycle.md::pnone::c0003"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "environment/02_water_cycle.md::pnone::c0002",
+          "quote": "较暖的空气通常会促进蒸发，并能在达到饱和前容纳更多水汽，这使降水时间间隔和降水强度可能发生变化。"
+        },
+        {
+          "chunk_id": "environment/02_water_cycle.md::pnone::c0003",
+          "quote": "较暖的空气通常会促进蒸发，并能在达到饱和前容纳更多水汽，这使降水时间间隔和降水强度可能发生变化。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q025",
+      "domain": "environment",
+      "query_type": "数字表达改写",
+      "question": "海洋平均 pH 约 8.1，为何仍称正在酸化，却不能说海水已经变成酸性？",
+      "answer": "约八点一仍呈弱碱性；酸化指向更酸方向变化，并非整个海洋已经变成酸性。",
+      "relevant_chunk_ids": [
+        "environment/03_ocean_acidification.md::pnone::c0001"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "environment/03_ocean_acidification.md::pnone::c0001",
+          "quote": "海洋平均酸碱度大约为八点一，仍呈弱碱性。因此，海洋酸化描述的是向更酸方向变化，并不意味着整个海洋已经变成酸性。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q026",
+      "domain": "environment",
+      "query_type": "术语与因果",
+      "question": "海水吸收 CO2 后，哪类离子增加导致 pH 下降？",
+      "answer": "氢离子增加。二氧化碳溶于水后形成碳酸并进一步产生氢离子和碳酸氢根离子，氢离子增多使酸度上升、pH 下降。",
+      "relevant_chunk_ids": [
+        "environment/03_ocean_acidification.md::pnone::c0001"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "environment/03_ocean_acidification.md::pnone::c0001",
+          "quote": "二氧化碳溶于海水后发生化学反应，形成碳酸，并进一步产生氢离子和碳酸氢根离子。氢离子浓度上升，对应酸度增加和酸碱度数值降低。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q027",
+      "domain": "environment",
+      "query_type": "语义改写",
+      "question": "酸化如何夺走牡蛎造壳所需的原料？这种原料是什么？",
+      "answer": "额外氢离子与碳酸根反应，使可用碳酸根减少，牡蛎形成碳酸钙壳就更困难。",
+      "relevant_chunk_ids": [
+        "environment/03_ocean_acidification.md::pnone::c0002"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "environment/03_ocean_acidification.md::pnone::c0002",
+          "quote": "牡蛎、珊瑚等生物需要利用海水中的钙和碳酸根形成碳酸钙外壳或骨骼。酸化过程中，更多碳酸根与额外的氢离子发生反应，使可供这些生物使用的碳酸根减少。这样一来，生物建造和维持硬壳或骨骼会更加困难；"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q028",
+      "domain": "environment",
+      "query_type": "观测项目",
+      "question": "为理解海洋酸化风险，资料建议持续观测哪些项目？",
+      "answer": "海水中的二氧化碳、酸碱度和生态变化。",
+      "relevant_chunk_ids": [
+        "environment/03_ocean_acidification.md::pnone::c0003"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "environment/03_ocean_acidification.md::pnone::c0003",
+          "quote": "持续观测海水中的二氧化碳、酸碱度和生态变化，是理解风险的重要手段。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q029",
+      "domain": "environment",
+      "query_type": "概念辨析",
+      "question": "白化只能由高水温造成吗？温度往另一个方向变化也会触发吗？",
+      "answer": "不只能由高温造成，海水过冷同样可能导致珊瑚白化。",
+      "relevant_chunk_ids": [
+        "environment/04_coral_bleaching.md::pnone::c0001"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "environment/04_coral_bleaching.md::pnone::c0001",
+          "quote": "海水过冷同样可能造成白化，不能把所有白化都解释为高温作用。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q030",
+      "domain": "environment",
+      "query_type": "条件查询",
+      "question": "珊瑚失去颜色后是否已经死亡？什么情况下还有恢复可能？",
+      "answer": "白化不代表已经死亡；失去共生藻会缺少主要食物来源，压力减轻时可能恢复，持续时也可能死亡。",
+      "relevant_chunk_ids": [
+        "environment/04_coral_bleaching.md::pnone::c0001"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "environment/04_coral_bleaching.md::pnone::c0001",
+          "quote": "白化并不意味着珊瑚已经死亡，但失去共生藻后，珊瑚会缺少主要食物来源，更容易受到疾病和其他压力影响。如果压力减轻，珊瑚可能恢复；如果压力持续，也可能死亡。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q031",
+      "domain": "environment",
+      "query_type": "语义改写",
+      "question": "海岸水面有规律地涨落，解释这种现象需要同时考虑哪两个天体的引力？",
+      "answer": "月球和太阳的引力。",
+      "relevant_chunk_ids": [
+        "environment/05_tides.md::pnone::c0001"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "environment/05_tides.md::pnone::c0001",
+          "quote": "潮汐是海水在月球和太阳引力作用下形成的长周期波动。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q032",
+      "domain": "environment",
+      "query_type": "概念辨析",
+      "question": "潮差能直接表示海流的水平速度吗？它实际测量的是什么？",
+      "answer": "不能；潮差是某次高潮与低潮水位之间的高度差。",
+      "relevant_chunk_ids": [
+        "environment/05_tides.md::pnone::c0001"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "environment/05_tides.md::pnone::c0001",
+          "quote": "某次高潮水位与低潮水位之间的高度差称为潮差。潮差描述水位差，不能把它直接当作水平方向的海流速度。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q033",
+      "domain": "computing",
+      "query_type": "精确术语与条件",
+      "question": "GET 与 POST 常见用途分别是什么，请求一定要带消息体吗？",
+      "answer": "GET 常用于获取资源，POST 常用于提交数据；消息体是可选的，并非所有请求都必须包含。",
+      "relevant_chunk_ids": [
+        "computing/01_http.md::pnone::c0001"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "computing/01_http.md::pnone::c0001",
+          "quote": "请求方法说明客户端希望执行什么操作，例如 GET 常用于获取资源，POST 常用于向服务器提交数据。请求路径指出目标资源的位置。标头提供额外信息，消息体则在需要时携带提交的内容，并不是所有请求都必须包含消息体。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q034",
+      "domain": "computing",
+      "query_type": "原因查询",
+      "question": "一次打开网页为什么通常不止发出一个 HTTP 请求？",
+      "answer": "完整网页除主要文档外，还可能需要另外获取样式、脚本、图片等附属资源。",
+      "relevant_chunk_ids": [
+        "computing/01_http.md::pnone::c0001"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "computing/01_http.md::pnone::c0001",
+          "quote": "展示一个完整网页，往往需要先获取主要文档，再获取样式、脚本、图片等附属资源，因此一次打开网页可能对应多次请求。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q035",
+      "domain": "computing",
+      "query_type": "语义改写",
+      "question": "协议本身不记住上次访问，购物车却能延续，用的是什么机制？",
+      "answer": "网站可借助 Cookie 等附加机制关联多次请求，维持购物车等会话状态。",
+      "relevant_chunk_ids": [
+        "computing/01_http.md::pnone::c0002"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "computing/01_http.md::pnone::c0002",
+          "quote": "网站可以借助 Cookie 等机制，在多次请求之间建立联系，使购物车、登录状态或其他连续交互得以实现。会话是通过附加机制组织起来的，而不是因为每次 HTTP 请求都自动记住之前的请求。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q036",
+      "domain": "computing",
+      "query_type": "版本与语义",
+      "question": "HTTP/2 改用二进制帧后，哪些消息语义仍被保留，它用什么提高连接利用率？",
+      "answer": "请求方法、状态码和标头等概念仍存在；通过多路复用提高连接利用率。",
+      "relevant_chunk_ids": [
+        "computing/01_http.md::pnone::c0003"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "computing/01_http.md::pnone::c0003",
+          "quote": "早期版本的消息通常可直接以文本理解，而 HTTP/2 使用二进制帧组织消息，并通过多路复用提高连接利用率。请求方法、状态码和标头等概念仍然存在。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q037",
+      "domain": "computing",
+      "query_type": "概念辨析",
+      "question": "HTML 空元素是否一定要有结束标签？",
+      "answer": "不一定；空元素不包围一段内容，不能认为所有元素都有成对的开始和结束标签。",
+      "relevant_chunk_ids": [
+        "computing/02_html.md::pnone::c0001"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "computing/02_html.md::pnone::c0001",
+          "quote": "有些元素是空元素，不像普通段落那样包围一段内容，因此不能机械地认为所有元素都必须有成对的开始与结束标签。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q038",
+      "domain": "computing",
+      "query_type": "操作理解",
+      "question": "给链接指定跳转目标，应在 HTML 元素的哪里填写什么信息？",
+      "answer": "在开始标签内填写属性，通过属性指定链接元素的目标位置。",
+      "relevant_chunk_ids": [
+        "computing/02_html.md::pnone::c0001",
+        "computing/02_html.md::pnone::c0002"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "computing/02_html.md::pnone::c0001",
+          "quote": "属性通常位于开始标签内，由属性名称和属性值组成。链接元素的目标位置可以通过属性指定。"
+        },
+        {
+          "chunk_id": "computing/02_html.md::pnone::c0002",
+          "quote": "属性通常位于开始标签内，由属性名称和属性值组成。链接元素的目标位置可以通过属性指定。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q039",
+      "domain": "computing",
+      "query_type": "多条件查询",
+      "question": "head 和 body 分别存放什么？浏览器标签页标题等同正文标题吗？",
+      "answer": "head 保存编码、页面标题等元信息，body 容纳主要内容；浏览器标签页的文档标题与正文标题元素不同。",
+      "relevant_chunk_ids": [
+        "computing/02_html.md::pnone::c0003"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "computing/02_html.md::pnone::c0003",
+          "quote": "head 保存文档相关的元信息，例如字符编码和页面标题；body 是网页主要内容的容器。浏览器标签页中显示的文档标题，与正文中的标题元素不是同一件事。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q040",
+      "domain": "computing",
+      "query_type": "语义改写",
+      "question": "HTML 里内层标签后打开，关闭顺序该怎样？只靠缩进能保证结构正确吗？",
+      "answer": "后打开的内层元素应先结束，避免交叉；缩进帮助阅读，不能代替正确元素结构。",
+      "relevant_chunk_ids": [
+        "computing/02_html.md::pnone::c0002"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "computing/02_html.md::pnone::c0002",
+          "quote": "后打开的内层元素应先结束，避免标签交叉。清晰的缩进有助于观察嵌套关系，不过缩进只是代码阅读方式，不能替代正确的元素结构。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q041",
+      "domain": "computing",
+      "query_type": "原因查询",
+      "question": "未编写任何 CSS，为什么网页标题和链接仍有基本样式？",
+      "answer": "浏览器通常会使用内置的默认样式。",
+      "relevant_chunk_ids": [
+        "computing/03_css.md::pnone::c0001",
+        "computing/03_css.md::pnone::c0003"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "computing/03_css.md::pnone::c0001",
+          "quote": "即使网页没有作者编写的样式表，浏览器通常也会使用内置的默认样式，使标题、段落和链接等元素保持基本可读性。"
+        },
+        {
+          "chunk_id": "computing/03_css.md::pnone::c0003",
+          "quote": "浏览器默认样式也属于样式来源，因此在判断某个元素为什么具有特定外观时，应考虑作者样式与默认样式共同参与的情况。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q042",
+      "domain": "computing",
+      "query_type": "术语分工",
+      "question": "一条 CSS 规则中，谁决定选中哪些元素，谁描述具体外观设置？",
+      "answer": "选择器指出作用目标；声明块中的属性和值描述表现特征及具体设置。",
+      "relevant_chunk_ids": [
+        "computing/03_css.md::pnone::c0001"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "computing/03_css.md::pnone::c0001",
+          "quote": "选择器用于指出规则将作用于哪些元素；声明块放在花括号中，里面可以包含多条声明。每条声明通常由属性和值组成，二者之间用冒号分隔，不同声明之间用分号分隔。属性说明要改变的表现特征，值说明该特征应当采用的具体设置。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q043",
+      "domain": "computing",
+      "query_type": "场景改写",
+      "question": "多个页面希望共享同一套样式，应该选哪种 CSS 应用方式，规则存在哪里？",
+      "answer": "外部样式表；规则保存在独立文件中，由各 HTML 文档引用。",
+      "relevant_chunk_ids": [
+        "computing/03_css.md::pnone::c0002"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "computing/03_css.md::pnone::c0002",
+          "quote": "外部样式表把样式规则保存在独立文件中，由 HTML 文档引用，便于让多个页面共享样式。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q044",
+      "domain": "computing",
+      "query_type": "多条件查询",
+      "question": "相同 HTML 内容为什么可以呈现不同外观？CSS 按什么方式组织功能？",
+      "answer": "相同结构化内容可因样式规则不同而呈现不同外观；CSS 按模块组织背景、边框、布局、颜色等功能。",
+      "relevant_chunk_ids": [
+        "computing/03_css.md::pnone::c0003"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "computing/03_css.md::pnone::c0003",
+          "quote": "同一份结构化内容，在不同样式规则下能够呈现出不同外观。\n\nCSS 的功能按模块组织，背景与边框、布局、颜色等功能可以分别在相应模块中查阅。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q045",
+      "domain": "computing",
+      "query_type": "精确术语",
+      "question": "反向 DNS 查询是从什么查到什么？",
+      "answer": "根据 IP 地址查找对应域名。",
+      "relevant_chunk_ids": [
+        "computing/04_dns.md::pnone::c0001"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "computing/04_dns.md::pnone::c0001",
+          "quote": "反向 DNS 查询则沿相反方向，根据 IP 地址查找对应域名。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q046",
+      "domain": "computing",
+      "query_type": "场景与概念辨析",
+      "question": "记住 mozilla.org 就能访问网站，DNS 负责把它映射成什么？还负责页面布局吗？",
+      "answer": "映射为用于网络通信的 IP 地址；DNS 不负责决定网页颜色和布局。",
+      "relevant_chunk_ids": [
+        "computing/04_dns.md::pnone::c0001"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "computing/04_dns.md::pnone::c0001",
+          "quote": "DNS 是域名系统，负责把人类容易记忆的域名映射为计算机用于网络通信的 IP 地址。例如，用户可以记住 mozilla.org 这样的域名，而不用直接记忆对应的数字地址。\n\n从域名查找 IP 地址的过程称为 DNS 查询或域名解析。反向 DNS 查询则沿相反方向，根据 IP 地址查找对应域名。域名与地址是不同概念：域名便于人类使用，地址用于定位网络通信的目标。DNS 提供名称与地址之间的映射，并不负责解释网页正文或决定网页的颜色和布局。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q047",
+      "domain": "computing",
+      "query_type": "接口名称",
+      "question": "页面里既要拉取远端数据，又要存储复杂数据、绘图，分别可用什么浏览器接口？",
+      "answer": "fetch 获取服务器数据，IndexedDB 保存复杂数据，canvas 绘制图形。",
+      "relevant_chunk_ids": [
+        "computing/05_javascript.md::pnone::c0001"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "computing/05_javascript.md::pnone::c0001",
+          "quote": "通过 fetch 接口获取服务器数据，使用 IndexedDB 保存复杂数据，以及利用 canvas 绘制图形。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    },
+    {
+      "query_id": "q048",
+      "domain": "computing",
+      "query_type": "多条件查询",
+      "question": "JS 只能在浏览器运行吗，它与 Java 是同一种语言吗？",
+      "answer": "JS 也能通过 Node.js 等运行时用于服务器端；JavaScript 与 Java 是不同语言。",
+      "relevant_chunk_ids": [
+        "computing/05_javascript.md::pnone::c0001"
+      ],
+      "evidence": [
+        {
+          "chunk_id": "computing/05_javascript.md::pnone::c0001",
+          "quote": "JavaScript 常简称 JS，是一种程序设计语言，常用于网页的动态脚本，也能通过 Node.js 等运行时用于服务器端。JavaScript 与 Java 是两种不同的语言，不能因为名称相似就认为它们相同。"
+        }
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "manual_notes": ""
+    }
+  ]
+}
